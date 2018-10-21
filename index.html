@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Professor Layton and the Curious Village</title>
+	<style>
+	body{background-color: #f8e8a0;}
+	#Layton {width: 100px; position: absolute; top: 310px; left: 15%;}
+	#Layton {cursor: pointer;}
+
+	#Layton2 {width: 2050px; position: absolute; top: 700px; left: 0%;}
+	#Layton3 {width: 2050px; position: absolute; top: -10%; left: 0%;
+	 }
+	#Layton4 {width: 300px; position: absolute; top: 870px; left: 50%;
+	animation: mymove2 9s infinite;}
+
+	#Layton5 {width: 300px; position: absolute; top: 300px; left: 20%;
+	}
+	#Layton5 {cursor: pointer;}
+	#Layton6 {width: 150px; position: absolute; top: 550px; left: 70%;
+	}
+	#Layton6 {cursor: pointer;}
+
+	#akfakfakf{width: 100px; position: absolute; top: 400px; left: 30%;}
+	#akfakfakf2{width: 100px; position: absolute; top: 400px; left: 30%;}
+	#akfakfakf3{width: 100px; position: absolute; top: 100px; left: 35%;}
+	#akfakfakf4{width: 100px; position: absolute; top: 100px; left: 35%;}
+	#akfakfakf5{width: 100px; position: absolute; top: 150px; left: 55%;}
+	#akfakfakf6{width: 100px; position: absolute; top: 150px; left: 50%;}
+
+	#LUKEA{width: 100px; position: absolute; top: 230px; left: 58.5%;}
+	#LUKEB{width: 100px; position: absolute; top: 230px; left: 65.5%;}
+	#LUKEC{width: 100px; position: absolute; top: 330px; left: 58.5%;}
+	#LUKED{width: 100px; position: absolute; top: 330px; left: 65.5%;}
+
+	#LUKEA,#LUKEB,#LUKEC,#LUKED {cursor: pointer;}
+
+    #LaytonDiv {position: absolute; left:900px; top: 150px; transition: all 1s;}
+	video {position: absolute; top: 30%; left: 35%; transform:translateX(-50%); width: 1px; transition: all 2s;}
+
+
+
+	@keyframes mymove2 {
+    from {left: 2500px;}
+    to {left: -300px;}
+}
+
+
+		
+
+
+	</style>
+	
+</head>
+<body>
+
+	<img src="./img/kisspng-professor-layton.png" id="Layton">
+	<img src="./img/Layton.png" id="Layton5">
+	<img src="./img/Luke.png" id="Layton6">
+	<img src="./img/rhkwpdyd1.png" id="Layton2">
+	<img src="./img/rhkwpdyd3.png" id="Layton3">
+	<img src="./img/rhkwpdyd2.png" id="Layton4">
+	<img src="./img/akf.gif" id="akfakfakf" style=" width: 0px; height: 0px; transition: all 0s">
+	<img src="./img/akf2.gif" id="akfakfakf2" style=" width: 0px; height: 0px; transition: all 0s">
+	<img src="./img/과제용333.png" id="akfakfakf3" style=" width: 0px; height: 0px; transition: all 0s">
+	<img src="./img/과제용3332.png" id="akfakfakf4" style=" width: 0px; height: 0px; transition: all 0s">
+	<img src="./img/과제용33323.png" id="akfakfakf5" style=" width: 0px; height: 0px; transition: all 0s">
+	<img src="./img/과제용444.png" id="akfakfakf6" style=" width: 0px; height: 0px;">
+
+	<img src="./img/AAA.png" id="LUKEA" style=" width: 0px; height: 0px; transition: all 0s">
+	<img src="./img/BBB.png" id="LUKEB" style=" width: 0px; height: 0px;transition: all 0s">
+	<img src="./img/CCC.png" id="LUKEC" style=" width: 0px; height: 0px;transition: all 0s">
+	<img src="./img/DDD.png" id="LUKED" style=" width: 0px; height: 0px;transition: all 0s">
+
+
+	<audio id="LaytonMusic">
+     <source src="./img/20_Theme_of_professor_layton.mp3" type="audio/mpeg">
+     </audio>
+     <audio id="LaytonMusic2">
+     <source src="./img/퍼즐.mp3" type="audio/mpeg">
+     </audio>
+
+
+      <div id="LaytonDiv">
+	<video id="LLayton" src="./img/Luke Triton Got It Right.mp4" type="video/mp4"
+		style="width: 0px; height: 0px; transition: all 1s"></video>
+	<video id="LLayton2" src="./img/Luke Triton Got It Wrong.mp4" type="video/mp4"
+		style="width: 0px; height: 0px; transition: all 1s"></video>
+
+     <script type="text/javascript">
+
+			var toggle2 = "off";file:///C:/Users/%EB%B9%B5/Desktop/%EA%B3%BC%EC%A0%9C/%EB%94%94%ED%8E%96/20181021/img/kisspng-professor-layton.png
+		Layton.onclick = function(){
+			if(toggle2=="off")
+			{	
+				toggle2="on";
+				LaytonMusic.play();
+			}
+			else
+			{
+				toggle2="off"
+				LaytonMusic.pause();
+			}
+		}
+
+        var toggle1 = 1; 
+		Layton5.onclick = function(){
+			if(toggle1== 1)
+			{	
+				LLayton2.pause();
+				akfakfakf4.style.width = "0px";
+				akfakfakf4.style.height = "0px";
+				akfakfakf5.style.width = "0px";
+				akfakfakf5.style.height = "0px";
+				akfakfakf6.style.width = "0px";
+				akfakfakf6.style.height = "0px";
+                LUKEA.style.width = "0px";
+                LUKEA.style.height = "0px";
+				LUKEB.style.width = "0px";
+				LUKEB.style.height = "0px";
+				LUKEC.style.width = "0px";
+				LUKEC.style.height = "0px";
+				LUKED.style.width = "0px";
+				LUKED.style.height = "0px";
+				
+				akfakfakf.style.width = "350px";
+				akfakfakf.style.height = "175px";
+				toggle1= 2;
+
+				
+			}
+			else if(toggle1 == 2)
+			{
+				akfakfakf.style.width = "0px";
+				akfakfakf.style.height = "0px";
+				akfakfakf2.style.width = "350px";
+				akfakfakf2.style.height = "175px";
+				toggle1 = 3;
+		    }
+		    else if(toggle1 == 3)
+		    {
+		    	akfakfakf2.style.width = "0px";
+				akfakfakf2.style.height = "0px";
+		    	akfakfakf3.style.width = "386px";
+				akfakfakf3.style.height = "577px";
+				LaytonMusic2.play();
+				LaytonMusic.pause();
+
+				toggle1 = 4;
+				
+			}
+			else if(toggle1 == 4)
+		    {
+		    
+		    	akfakfakf3.style.width = "0px";
+				akfakfakf3.style.height = "0px";
+		    	akfakfakf4.style.width = "386px";
+				akfakfakf4.style.height = "577px";
+
+				toggle1 = 5;
+				
+			}
+			else if(toggle1 == 5)
+		    {
+		    
+		    	akfakfakf5.style.width = "386px";
+				akfakfakf5.style.height = "360px";
+
+
+				toggle1 = 6;
+				
+			}
+			else if(toggle1 == 6)
+		    {
+		    
+		    	akfakfakf5.style.width = "386px";
+				akfakfakf5.style.height = "360px";
+                LUKEA.style.width = "100px";
+                LUKEA.style.height = "78px";
+				LUKEB.style.width = "100px";
+				LUKEB.style.height = "78px";
+				LUKEC.style.width = "100px";
+				LUKEC.style.height = "78px";
+				LUKED.style.width = "100px";
+				LUKED.style.height = "78px";
+
+				toggle1 = 1;
+			}
+
+		}
+		var toggle = "off"
+			
+		LUKEA.onclick = function(){
+			if(toggle == "off"){
+			toggle = "on";
+			    LaytonMusic2.pause();
+				LLayton2.play();
+				LLayton2.style.width="800px";
+				LLayton2.style.height="600px";
+				gd.pause();
+			LLayton2.currentTime=0;
+			LLayton.currentTime=0;
+			}
+			else{ 
+			toggle = "off";
+			
+			LLayton2.pause();
+			LLayton2.style.width="0%";
+			LLayton2.style.height="0%";
+
+			LLayton.pause();
+			LLayton.style.width="0%";
+			LLayton.style.height="0%";
+			LLayton2.currentTime=0;
+			LLayton.currentTime=0;	
+			}
+	}	
+	var toggle = "off"
+			
+		LUKEB.onclick = function(){
+			if(toggle == "off"){
+			toggle = "on";
+			    LaytonMusic2.pause();
+				LLayton2.play();
+				LLayton2.style.width="800px";
+				LLayton2.style.height="600px";
+				gd.pause();
+			LLayton2.currentTime=0;
+			LLayton.currentTime=0;
+			}
+			else{ 
+			toggle = "off";
+			
+			LLayton2.pause();
+			LLayton2.style.width="0%";
+			LLayton2.style.height="0%";
+
+			LLayton.pause();
+			LLayton.style.width="0%";
+			LLayton.style.height="0%";
+			LLayton2.currentTime=0;
+			LLayton.currentTime=0;	
+			}
+	}
+	var toggle = "off"
+			
+		LUKEC.onclick = function(){
+			if(toggle == "off"){
+			toggle = "on";
+			    LaytonMusic2.pause();
+				LLayton2.play();
+				LLayton2.style.width="800px";
+				LLayton2.style.height="600px";
+				gd.pause();
+			LLayton2.currentTime=0;
+			LLayton.currentTime=0;
+			}
+			else{ 
+			toggle = "off";
+			
+			LLayton2.pause();
+			LLayton2.style.width="0%";
+			LLayton2.style.height="0%";	
+
+			LLayton.pause();
+			LLayton.style.width="0%";
+			LLayton.style.height="0%";
+			LLayton2.currentTime=0;
+			LLayton.currentTime=0;
+
+			}
+	}
+	var toggle = "off"
+			
+		LUKED.onclick = function(){
+			if(toggle == "off"){
+			toggle = "on";
+			    LaytonMusic2.pause();
+				LLayton.play();
+				LLayton.style.width="800px";
+				LLayton.style.height="600px";
+				gd.pause();
+			LLayton2.currentTime=0;
+			LLayton.currentTime=0;
+
+
+
+			}
+			else{ 
+			toggle = "off";
+			
+			LLayton.pause();
+			LLayton.style.width="0%";
+			LLayton.style.height="0%";
+
+			LLayton2.pause();
+			LLayton2.style.width="0%";
+			LLayton2.style.height="0%";
+			LLayton2.currentTime=0;
+			LLayton.currentTime=0;
+
+			akfakfakf4.style.width = "0px";
+		    akfakfakf4.style.height = "0px";
+			akfakfakf5.style.width = "0px";
+			akfakfakf5.style.height = "0px";
+            LUKEA.style.width = "0px";
+            LUKEA.style.height = "0px";
+		    LUKEB.style.width = "0px";
+			LUKEB.style.height = "0px";
+			LUKEC.style.width = "0px";
+			LUKEC.style.height = "0px";
+			LUKED.style.width = "0px";
+			LUKED.style.height = "0px";
+			akfakfakf6.style.width = "386px";
+		    akfakfakf6.style.height = "577px";
+
+			}
+	}	
+
+
+
+     	
+
+
+
+
+     </script>
+
+</body>
+</html>
